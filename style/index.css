@@ -1,0 +1,117 @@
+html {
+	overflow-x: hidden;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.app{
+	background-image:url("../images/bg/bg-one.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+header h1{
+	margin: 50px 0px 30px 0px;
+	text-align: center;
+	font-size: 40px;
+}
+header p{
+	font-size: 20px;
+}
+.pads{
+	z-index: 2;
+	background: lightblue;
+	width: 100%;
+	display: flex;
+}
+.pads > div {
+	height: 100px;
+	width: 100px;
+	flex: 1;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+}
+.pad1{
+	background: #60d394;
+}
+.pad2 {
+	background: #d36060;
+}
+.pad3 {
+	background: #c060d3;
+}
+.pad4 {
+	background: #d3d160;
+}
+.pad5 {
+	background: #6860d3;
+}
+.pad6 {
+	background: #60b2d3;
+}
+.title {
+	padding: 15% 0 0 0;
+}
+.artist {
+	font-size: 12px;
+}
+
+@keyframes jump {
+	0% {
+		bottom: 50%;
+		left: -20%
+	}
+	50% {
+		bottom: 50%;
+		left: 50%;
+	}
+	100% {
+		bottom: 50%;
+		left: 105%;
+	}
+}
+.visualizer {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	bottom: 0%;
+	z-index: 1;
+}
+.visual > div {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	bottom: 0%;
+	z-index: 1;
+}
+.run {
+	animation: run 3s ease-in-out 3s infinite;
+}
+.invisible{
+	display: none;
+}
+
+@keyframes run {
+	0% {
+		bottom: 50%;
+		left: -20%
+	}
+	50% {
+		bottom: 50%;
+		left: 50%;
+	}
+	100% {
+		bottom: 50%;
+		left: 105%;
+	}
+}
